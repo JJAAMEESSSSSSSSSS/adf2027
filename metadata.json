@@ -1,0 +1,6 @@
+{
+  "name": "Custom CMS Studio",
+  "description": "Full-featured Content Management System dashboard with CRUD management, authentication, tables, and statistics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

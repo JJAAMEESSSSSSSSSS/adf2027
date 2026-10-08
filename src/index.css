@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .font-pixel {
+    font-family: 'Press Start 2P', monospace;
+  }
+  .font-tech {
+    font-family: 'Chakra Petch', sans-serif;
+  }
+  .font-silkscreen {
+    font-family: 'Silkscreen', monospace;
+  }
+  .font-vt {
+    font-family: 'VT323', monospace;
+  }
+}
+
+/* Custom scrollbars and retro hazard stripes */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #190903;
+}
+::-webkit-scrollbar-thumb {
+  background: #e65a15;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #f97316;
+}
+
+.hazard-stripes {
+  background: repeating-linear-gradient(
+    45deg,
+    rgba(230, 90, 21, 0.18),
+    rgba(230, 90, 21, 0.18) 12px,
+    transparent 12px,
+    transparent 24px
+  );
+}
+
+.hazard-stripes-strong {
+  background: repeating-linear-gradient(
+    -45deg,
+    #e65a15 0px,
+    #e65a15 14px,
+    #1a0b05 14px,
+    #1a0b05 28px
+  );
+}
+
+.tape-top {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-2deg);
+  width: 70px;
+  height: 22px;
+  background-color: rgba(245, 230, 190, 0.85);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+  z-index: 10;
+}
